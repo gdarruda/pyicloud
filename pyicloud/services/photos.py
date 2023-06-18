@@ -488,6 +488,7 @@ class PhotoAsset:
         self._versions = None
 
     PHOTO_VERSION_LOOKUP = {
+        "alternative": "resOriginalAlt",
         "original": "resOriginal",
         "medium": "resJPEGMed",
         "thumb": "resJPEGThumb",
