@@ -556,7 +556,9 @@ class PhotoAsset:
                 typed_version_lookup = self.VIDEO_VERSION_LOOKUP
             else:
                 typed_version_lookup = self.PHOTO_VERSION_LOOKUP
-
+            print("****************")
+            print(self._master_record["fields"])
+            print("****************")
             for key, prefix in typed_version_lookup.items():
                 if "%sRes" % prefix in self._master_record["fields"]:
                     fields = self._master_record["fields"]
